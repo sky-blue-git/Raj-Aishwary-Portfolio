@@ -15,7 +15,7 @@ const Experience = () => {
       ],
       technologies: ["Next.js", "TypeScript", "JavaScript", "Redux", "MySQL", "Retool", "Appsmith", "REST APIs"],
       color: "primary",
-      logo: 'src/assets/leetcode_white.png'
+      logo: 'src/assets/unacademy_logo.png'
     },
     {
       company: "Jupiter.Money",

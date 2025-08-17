@@ -25,7 +25,7 @@ const Achievements = () => {
     {
       logo: leetcode_logo,
       title: "Top 2% on LeetCode",
-      description: "Solved 500+ coding problems with consistent performance in the top 2 percentile",
+      description: "Solved 900+ coding problems with consistent performance in the top 2 percentile",
       stat: "2061",
       label: "Max Rating",
       color: "primary",
