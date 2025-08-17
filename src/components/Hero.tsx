@@ -54,8 +54,7 @@ const Hero = () => {
             </div>
 
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground leading-relaxed">
-              Passionate about creating exceptional digital experiences with modern web technologies. 
-              Specialized in React, JavaScript, and building scalable frontend solutions.
+              Passionate full-stack developer with expertise in React Native and React.js, creating exceptional digital experiences and building scalable, modern web and mobile solutions.
             </p>
 
             {/* CTA Buttons */}
