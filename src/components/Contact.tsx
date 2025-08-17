@@ -65,13 +65,13 @@ const Contact = () => {
       icon: Github,
       label: "GitHub",
       href: "https://github.com/sky-blue-git",
-      color: "hover:text-foreground"
+      color: "hover:text-background"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/raj-aishwary/",
-      color: "hover:text-foreground"
+      color: "hover:text-background"
     }
   ];
 

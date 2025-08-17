@@ -45,7 +45,7 @@ const Hero = () => {
             
             <div className="space-y-4">
               <h2 className="text-xl md:text-3xl text-muted-foreground font-medium">
-                FullStack Developer & Problem Solver
+                FullStack Developer & Competitive programmer
               </h2>
               <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                 <MapPin className="h-5 w-5" />
@@ -86,7 +86,7 @@ const Hero = () => {
                 variant="ghost"
                 size="icon"
                 onClick={() => window.open('https://github.com/sky-blue-git', '_blank')}
-                className="hover:text-primary hover:scale-110 transition-all duration-300"
+                className="hover:text-background hover:scale-110 transition-all duration-300"
               >
                 <Github className="h-6 w-6" />
               </Button>
@@ -94,7 +94,7 @@ const Hero = () => {
                 variant="ghost"
                 size="icon"
                 onClick={() => window.open('https://www.linkedin.com/in/raj-aishwary', '_blank')}
-                className="hover:text-primary hover:scale-110 transition-all duration-300"
+                className="hover:text-background hover:scale-110 transition-all duration-300"
               >
                 <Linkedin className="h-6 w-6" />
               </Button>
