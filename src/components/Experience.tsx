@@ -1,5 +1,6 @@
 import { CalendarDays, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import unacademy_logo from '@/assets/unacademy_logo.png';
 
 const Experience = () => {
   const experiences = [
@@ -15,7 +16,7 @@ const Experience = () => {
       ],
       technologies: ["Next.js", "TypeScript", "JavaScript", "Redux", "MySQL", "Retool", "Appsmith", "REST APIs"],
       color: "primary",
-      logo: 'src/assets/unacademy_logo.png'
+      logo: unacademy_logo
     },
     {
       company: "Jupiter.Money",
