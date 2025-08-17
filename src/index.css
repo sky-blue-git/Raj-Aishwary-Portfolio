@@ -778,6 +778,41 @@
     background: hsl(var(--primary) / 0.2);
     color: hsl(var(--foreground));
   }
+
+  /* Autocomplete and Autofill Styles */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px hsl(var(--muted)) inset !important;
+    -webkit-text-fill-color: hsl(var(--foreground)) !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  /* Dark theme autofill */
+  .dark input:-webkit-autofill,
+  .dark input:-webkit-autofill:hover,
+  .dark input:-webkit-autofill:focus,
+  .dark input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px hsl(var(--muted)) inset !important;
+    -webkit-text-fill-color: hsl(var(--foreground)) !important;
+  }
+
+  /* Autocomplete dropdown styles */
+  input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  /* Firefox autofill */
+  input:-moz-autofill {
+    background-color: hsl(var(--muted)) !important;
+    color: hsl(var(--foreground)) !important;
+  }
+
+  /* Edge autofill */
+  input:-ms-input-placeholder {
+    color: hsl(var(--muted-foreground));
+  }
   
   /* Advanced Utility Classes */
   .animate-morph {

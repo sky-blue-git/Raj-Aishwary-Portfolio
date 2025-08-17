@@ -5,6 +5,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
+import { emailjsConfig } from '@/config/emailjs';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,16 +22,38 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: emailjsConfig.toEmail,
+        },
+        emailjsConfig.publicKey
+      );
+      
+      if (result.status === 200) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      }
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again later or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -102,7 +126,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your name"
                     required
-                    className="bg-muted border-border focus:border-primary transition-colors"
+                    className="bg-muted border-border focus:border-primary transition-colors autofill:bg-muted autofill:text-foreground"
                   />
                 </div>
                 <div className="space-y-2">
@@ -115,7 +139,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="your.email@example.com"
                     required
-                    className="bg-muted border-border focus:border-primary transition-colors"
+                    className="bg-muted border-border focus:border-primary transition-colors autofill:bg-muted autofill:text-foreground"
                   />
                 </div>
               </div>
@@ -129,7 +153,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="What's this about?"
                   required
-                  className="bg-muted border-border focus:border-primary transition-colors"
+                  className="bg-muted border-border focus:border-primary transition-colors autofill:bg-muted autofill:text-foreground"
                 />
               </div>
               
@@ -216,8 +240,7 @@ const Contact = () => {
               </div>
               
               <p className="text-muted-foreground text-sm mt-4 leading-relaxed">
-                Feel free to connect with me on social media. I regularly share insights 
-                about web development, programming tips, and tech industry trends.
+                Feel free to connect with me on social media. I’d love to exchange ideas and connect with like-minded people in tech.
               </p>
             </div>
 
