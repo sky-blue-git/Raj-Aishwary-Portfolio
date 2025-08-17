@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -43,8 +43,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "raj.singh@email.com",
-      href: "mailto:raj.singh@email.com"
+      value: "rajaishwaryasingh@email.com",
+      href: "mailto:rajaishwaryasingh@email.com"
     },
     {
       icon: Phone,
@@ -64,20 +64,14 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/rajsingh",
+      href: "https://github.com/sky-blue-git",
       color: "hover:text-foreground"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/rajsingh",
-      color: "hover:text-primary"
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/rajsingh",
-      color: "hover:text-accent"
+      href: "https://www.linkedin.com/in/raj-aishwary/",
+      color: "hover:text-foreground"
     }
   ];
 
