@@ -1,11 +1,13 @@
 import { Github, ExternalLink } from "lucide-react";
+import coffee_house from '@/assets/coffee-house-project.jpg';
+import job_portal from '@/assets/job-portal-project.jpg';
 
 const Projects = () => {
   const projects = [
     {
       title: "Project One",
       description: "Sleek and efficient task manager with intuitive UI.",
-      image: "src/assets/coffee-house-project.jpg",
+      image: coffee_house,
       tech: ["React", "Tailwind", "Node.js"],
       github: "#",
       live: "#",
@@ -13,7 +15,7 @@ const Projects = () => {
     {
       title: "Project Two",
       description: "Real-time collaborative code sharing platform.",
-      image: "src/assets/job-portal-project.jpg",
+      image: job_portal,
       tech: ["Next.js", "Express", "MongoDB"],
       github: "#",
       live: "#",
@@ -21,7 +23,7 @@ const Projects = () => {
     {
       title: "Project Three",
       description: "AI chatbot with natural conversation flow.",
-      image: "src/assets/job-portal-project.jpg",
+      image: coffee_house,
       tech: ["Python", "OpenAI API", "Flask"],
       github: "#",
       live: "#",
@@ -29,7 +31,7 @@ const Projects = () => {
     {
       title: "Project Four",
       description: "E-commerce with advanced search & secure checkout.",
-      image: "src/assets/coffee-house-project.jpg",
+      image: job_portal,
       tech: ["React", "Redux", "Stripe"],
       github: "#",
       live: "#",
@@ -37,7 +39,7 @@ const Projects = () => {
     {
       title: "Project Five",
       description: "Portfolio website with premium UI design.",
-      image: "src/assets/coffee-house-project.jpg",
+      image: job_portal,
       tech: ["React", "Tailwind", "Framer Motion"],
       github: "#",
       live: "#",
@@ -45,7 +47,7 @@ const Projects = () => {
     {
       title: "Project Six",
       description: "Chat application with end-to-end encryption.",
-      image: "src/assets/coffee-house-project.jpg",
+      image: coffee_house,
       tech: ["React Native", "Firebase", "Socket.io"],
       github: "#",
       live: "#",

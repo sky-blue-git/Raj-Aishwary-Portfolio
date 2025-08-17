@@ -1,6 +1,7 @@
 import { CalendarDays, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import unacademy_logo from '@/assets/unacademy_logo.png';
+import jupiter_logo from '@/assets/jupiter_money_logo.png';
 
 const Experience = () => {
   const experiences = [
@@ -33,7 +34,7 @@ const Experience = () => {
       ],
       technologies: ["React Native", "typeScript", "JavaScript", "Git", "Github"],
       color: "accent",
-      logo: 'src/assets/jupiter_money_logo.png'
+      logo: jupiter_logo
     }
   ];
 
