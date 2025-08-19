@@ -1,5 +1,6 @@
 import { Github, ExternalLink } from "lucide-react";
-import coffee_house from '@/assets/coffee-house-project.jpg';
+import coffee_house from '@/assets/coffee-house.png';
+import my_portfolio from '@/assets/my-portfolio.png'
 import job_portal from '@/assets/job-portal-project.jpg';
 
 const Projects = () => {
@@ -21,20 +22,20 @@ const Projects = () => {
       live: "#",
     },
     {
-      title: "Project Three",
-      description: "AI chatbot with natural conversation flow.",
+      title: "Coffee House",
+      description: "A coffee ordering app to browse coffees and beans, view details, manage cart and favorites, track orders, and with payment methods.",
       image: coffee_house,
-      tech: ["Python", "OpenAI API", "Flask"],
-      github: "#",
+      tech: ["React Native", "TypeScript", "Zustand"],
+      github: "https://github.com/sky-blue-git/Coffee-House",
       live: "#",
     },
     {
-      title: "Project Four",
-      description: "E-commerce with advanced search & secure checkout.",
-      image: job_portal,
-      tech: ["React", "Redux", "Stripe"],
-      github: "#",
-      live: "#",
+      title: "My Portfolio",
+      description: "Modern, responsive single‑page portfolio featuring dark mode, smooth animations, project showcase, and EmailJS contact, deployed on Vercel.",
+      image: my_portfolio,
+      tech: ["React.Js", "TypeScript", "Tailwind"],
+      github: "https://github.com/sky-blue-git/Raj-Aishwary-Portfolio",
+      live: "https://raj-aishwary-portfolio.vercel.app/",
     },
     {
       title: "Project Five",
@@ -84,7 +85,7 @@ const Projects = () => {
               {/* Project Content */}
               <div className="p-5">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mt-2 line-clamp-2">
+                <p className="text-muted-foreground text-sm mt-2">
                   {project.description}
                 </p>
 
