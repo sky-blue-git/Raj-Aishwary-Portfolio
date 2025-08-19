@@ -27,7 +27,7 @@ const Projects = () => {
       image: coffee_house,
       tech: ["React Native", "TypeScript", "Zustand"],
       github: "https://github.com/sky-blue-git/Coffee-House",
-      live: "#",
+      live: "https://drive.usercontent.google.com/download?id=1B_J5yt9C3rRSPXnmB2ysgCrE3uSWyXEJ&export=download&authuser=0",
     },
     {
       title: "My Portfolio",
