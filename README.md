@@ -122,24 +122,6 @@ The website is fully responsive and optimized for:
 1. Build the project: `npm run build`
 2. Upload the `dist` folder to Netlify
 
-### GitHub Pages
-1. Add GitHub Pages workflow
-2. Build and deploy automatically
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Contact
-
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn]
-- **GitHub**: [Your GitHub]
-
 ---
 
 Built with ❤️ using React, TypeScript, and Tailwind CSS
