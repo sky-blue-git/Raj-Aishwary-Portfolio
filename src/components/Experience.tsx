@@ -8,7 +8,7 @@ const Experience = () => {
     {
       company: "Unacademy",
       position: "SDE Intern",
-      duration: "Apr 2025 - Jul 2025",
+      duration: "Apr 2025 - Aug 2025",
       location: "Bengaluru, India",
       type: "Internship",
       description: [

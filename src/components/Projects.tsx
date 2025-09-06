@@ -2,6 +2,7 @@ import { Github, ExternalLink } from "lucide-react";
 import coffee_house from '@/assets/coffee-house.png';
 import my_portfolio from '@/assets/my-portfolio.png'
 import job_portal from '@/assets/job-portal-project.jpg';
+import job_hunt from '@/assets/jobhunt-project.png';
 
 const Projects = () => {
   const projects = [
@@ -14,12 +15,12 @@ const Projects = () => {
       live: "#",
     },
     {
-      title: "Project Two",
-      description: "Real-time collaborative code sharing platform.",
-      image: job_portal,
-      tech: ["Next.js", "Express", "MongoDB"],
-      github: "#",
-      live: "#",
+      title: "JobHunt",
+      description: "A full-stack MERN job portal with dual authentication, advanced job filters, real-time application tracking, and Cloudinary integration.",
+      image: job_hunt,
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "TailwindCSS", "Cloudinary"],
+      github: "https://github.com/sky-blue-git/JobHunt",
+      live: "https://job-portal-frontend-zxea.onrender.com/",
     },
     {
       title: "Coffee House",
