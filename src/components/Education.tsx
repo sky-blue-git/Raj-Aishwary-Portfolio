@@ -46,7 +46,7 @@ const Education = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <BookOpen className="h-5 w-5" />
-                    <span>CGPA: 8.1/10</span>
+                    <span>CGPA: 8.10/10</span>
                   </div>
                 </div>
               </div>

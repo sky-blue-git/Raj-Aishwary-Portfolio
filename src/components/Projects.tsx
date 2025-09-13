@@ -3,15 +3,16 @@ import coffee_house from '@/assets/coffee-house.png';
 import my_portfolio from '@/assets/my-portfolio.png'
 import job_portal from '@/assets/job-portal-project.jpg';
 import job_hunt from '@/assets/jobhunt-project.png';
+import drive_pro from '@/assets/drivepro-project.png'
 
 const Projects = () => {
   const projects = [
     {
-      title: "Project One",
-      description: "Sleek and efficient task manager with intuitive UI.",
-      image: coffee_house,
-      tech: ["React", "Tailwind", "Node.js"],
-      github: "#",
+      title: "DrivePro",
+      description: "AI-powered car test-drive booking platform with image-based search, dynamic booking flows, and admin dashboard.",
+      image: drive_pro,
+      tech: ["Next.js", "TailwindCSS", "PostgreSQL", "Arcjet", "Google Gemini AI", "Clerk"],
+      github: "https://github.com/sky-blue-git/DrivePro",
       live: "#",
     },
     {
@@ -37,23 +38,7 @@ const Projects = () => {
       tech: ["React.Js", "TypeScript", "Tailwind"],
       github: "https://github.com/sky-blue-git/Raj-Aishwary-Portfolio",
       live: "https://raj-aishwary-portfolio.vercel.app/",
-    },
-    {
-      title: "Project Five",
-      description: "Portfolio website with premium UI design.",
-      image: job_portal,
-      tech: ["React", "Tailwind", "Framer Motion"],
-      github: "#",
-      live: "#",
-    },
-    {
-      title: "Project Six",
-      description: "Chat application with end-to-end encryption.",
-      image: coffee_house,
-      tech: ["React Native", "Firebase", "Socket.io"],
-      github: "#",
-      live: "#",
-    },
+    }
   ];
 
   return (
