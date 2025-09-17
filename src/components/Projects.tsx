@@ -1,6 +1,7 @@
 import { Github, ExternalLink } from "lucide-react";
 import coffee_house from '@/assets/coffee-house.png';
 import my_portfolio from '@/assets/my-portfolio.png'
+import quick_eats from '@/assets/quick-eats-project.png'
 import job_portal from '@/assets/job-portal-project.jpg';
 import job_hunt from '@/assets/jobhunt-project.png';
 import drive_pro from '@/assets/drivepro-project.png'
@@ -30,6 +31,14 @@ const Projects = () => {
       tech: ["React Native", "TypeScript", "Zustand"],
       github: "https://github.com/sky-blue-git/Coffee-House",
       live: "https://drive.usercontent.google.com/download?id=1B_J5yt9C3rRSPXnmB2ysgCrE3uSWyXEJ&export=download&authuser=0",
+    },
+    {
+      title: "QuickEats",
+      description: "Modern, responsive single‑page portfolio featuring dark mode, smooth animations, project showcase, and EmailJS contact, deployed on Vercel.",
+      image: quick_eats,
+      tech: ["React.Js", "TypeScript", "Tailwind"],
+      github: "#",
+      live: "#",
     },
     {
       title: "My Portfolio",
